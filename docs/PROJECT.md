@@ -1,6 +1,6 @@
 # Project Writeup: AWS FinOps Automation
 
-Why this exists, how it was built, why each choice, and the benefits. Also the interview talking-track.
+Why this exists, how it was built, why each choice, and the benefits.
 
 ## 1. The problem it solves
 
@@ -28,7 +28,7 @@ Cloud bills grow quietly. Nobody decides to overspend; it accumulates from idle 
 - Rightsizing candidates are surfaced with evidence, turning cost talk into specific actions.
 - All of it is code: the guardrails are version-controlled and reproducible across accounts.
 
-## 5. Interview talking points
+## 5. Design notes and trade-offs
 
 - CUR vs Cost Explorer vs Budgets: CUR is the raw granular data (Athena), Cost Explorer is the query and forecasting API, Budgets is the alerting guardrail. This project uses all three for what each does best.
 - Why tagging is the foundation of FinOps: without it, no showback or chargeback is possible and optimization is blind.
